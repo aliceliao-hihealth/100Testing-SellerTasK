@@ -1,4 +1,4 @@
-# 賣家側｜任務分配
+# 賣家側　任務分配
 
 JustPlay 官網穩定度測試（100 筆訂單，正式環境）測試團隊文件。
 
@@ -12,10 +12,12 @@ JustPlay 官網穩定度測試（100 筆訂單，正式環境）測試團隊文�
 
 | 文件 | 內容 |
 |---|---|
-| [事前說明](https://aliceliao-hihealth.github.io/100Testing-Readme/) | 全體測試人員必讀：目的、工作範圍、各項工作對應的文件、開始前八項確認、回報方式 |
-| [買家側｜逐筆執行腳本](https://aliceliao-hihealth.github.io/100Testing-Buyer-Scripe/) | 100 列均已載明執行日期、時段、裝置、商品與數量、取貨方式與應執行動作 |
+| [事前說明](https://aliceliao-hihealth.github.io/100Testing-Readme/) | 全體必讀：目的、工作範圍、各項工作對應的文件、開始前八項確認、回報方式 |
+| [買家側　逐筆執行腳本](https://aliceliao-hihealth.github.io/100Testing-Buyer-Scripe/) | 100 列均已載明日期、時段、裝置、商品與數量、取貨方式與應執行動作 |
+| [邊角案例手冊](https://aliceliao-hihealth.github.io/justplay_game_edgecase/) | 27 個客服／營運情境的處理方式。測試期間依手冊處理，並同時驗證手冊本身 |
+| [說明圖（四張）](https://aliceliao-hihealth.github.io/100Testing-Readme/diagrams.html) | 文件結構、執行流程、訂單分流樹、3 天時間軸 |
 
-三份文件建議的閱讀順序為：**事前說明 → 依承接的工作查閱買家側或賣家側文件**。承接的工作對應該讀哪幾份，列於《事前說明》第三節。
+三份文件建議的閱讀順序為：**事前說明 → 依承接的工作查閱買家側或賣家側文件**。承接的工作對應該讀哪幾份，列於《事前說明》第三節，也畫在說明圖第①張。
 
 ## 本 repo 內容
 
