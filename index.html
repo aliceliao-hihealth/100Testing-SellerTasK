@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>官網穩定度測試｜任務分配（賣家版）</title>
+<style>
+:root{--bg:#fafafa;--card:#fff;--ink:#1f2937;--muted:#6b7280;--border:#e5e7eb;
+--danger:#dc2626;--danger-bg:#fef2f2;--warn:#d97706;--warn-bg:#fffbeb;
+--ok:#059669;--ok-bg:#ecfdf5;--info:#2563eb;--info-bg:#eff6ff;--hot-bg:#fff7f7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Microsoft JhengHei",sans-serif;
+background:var(--bg);color:var(--ink);line-height:1.75;margin:0;padding:0;
+-webkit-text-size-adjust:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 20px 80px}
+header.doc{background:var(--card);border:1px solid var(--border);border-radius:10px;
+padding:22px 24px;margin-bottom:20px;border-top:4px solid var(--info)}
+header.doc h1{font-size:26px;margin:0 0 10px;line-height:1.4}
+header.doc .meta{color:var(--muted);font-size:13px}
+header.doc .meta b{color:var(--ink)}
+nav.toc{background:var(--card);border:1px solid var(--border);border-radius:10px;
+padding:16px 20px;margin-bottom:24px}
+nav.toc .t{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.08em;margin-bottom:8px}
+nav.toc ol{margin:0;padding-left:20px}
+nav.toc li{margin:3px 0}
+nav.toc a{color:var(--info);text-decoration:none}
+nav.toc a:hover{text-decoration:underline}
+main{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:8px 26px 30px}
+h1,h2,h3,h4{line-height:1.45}
+h2{font-size:20px;margin:34px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--ink);scroll-margin-top:16px}
+h3{font-size:16.5px;margin:24px 0 10px;scroll-margin-top:16px}
+h4{font-size:15px;margin:18px 0 8px}
+p{margin:11px 0}
+a{color:var(--info)}
+hr{border:0;border-top:1px solid var(--border);margin:26px 0}
+ul,ol{margin:11px 0;padding-left:26px}
+li{margin:5px 0}
+code{background:#f3f4f6;border:1px solid var(--border);border-radius:4px;
+padding:1px 5px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre.code{background:#1f2937;color:#f9fafb;padding:14px 16px;border-radius:8px;overflow-x:auto}
+pre.code code{background:none;border:0;color:inherit;padding:0}
+.tw{overflow-x:auto;margin:14px 0;border:1px solid var(--border);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+th,td{border-bottom:1px solid var(--border);border-right:1px solid var(--border);
+padding:9px 11px;vertical-align:top}
+th:last-child,td:last-child{border-right:0}
+thead th{background:#f9fafb;font-weight:700;white-space:nowrap;position:sticky;top:0}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#fcfcfd}
+tbody tr.hot{background:var(--hot-bg)}
+tbody tr.hot:hover{background:#fff0f0}
+blockquote{margin:16px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--info);
+background:var(--info-bg)}
+blockquote.danger{border-left-color:var(--danger);background:var(--danger-bg)}
+blockquote.warn{border-left-color:var(--warn);background:var(--warn-bg)}
+blockquote.ok{border-left-color:var(--ok);background:var(--ok-bg)}
+blockquote>:first-child{margin-top:0}
+blockquote>:last-child{margin-bottom:0}
+blockquote h2{font-size:17px;border:0;margin:4px 0 8px;padding:0}
+blockquote h3{font-size:15.5px;margin:4px 0 8px}
+blockquote .tw{background:var(--card)}
+footer.doc{color:var(--muted);font-size:12px;text-align:center;margin-top:26px}
+@media (max-width:640px){
+ .wrap{padding:16px 12px 60px}
+ main{padding:6px 14px 22px}
+ header.doc{padding:18px 16px}
+ table{font-size:13px}
+ th,td{padding:7px 9px}
+}
+@media print{
+ body{background:#fff}
+ .wrap{max-width:none;padding:0}
+ header.doc,main,nav.toc{border:0;border-radius:0;padding:0}
+ nav.toc{display:none}
+ thead th{position:static}
+ blockquote{break-inside:avoid}
+ tr{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="doc">
+<h1>官網穩定度測試｜任務分配（賣家版）</h1>
+<div class="meta">本文件發給承接倉儲／營運／財會作業的人員。買家側任務見《100筆訂單_逐筆執行腳本》。<br><strong>本次買家側與賣家側為同一批人員，同一人可同時承接兩側工作，分配方式由團隊自行決定。</strong></div>
+</header>
+<nav class="toc"><div class="t">目錄</div><ol><li><a href="#給所有測試人員的說明">給所有測試人員的說明</a></li><li><a href="#一-分工與負責事項">一、分工與負責事項</a></li><li><a href="#二-前置作業">二、前置作業</a></li><li><a href="#三-訂單終態分流-最優先事項">三、訂單終態分流（最優先事項）</a></li><li><a href="#四-作業要點">四、作業要點</a></li><li><a href="#五-問題回報">五、問題回報</a></li><li><a href="#六-本次無法覆蓋的項目-已知-不需尋找">六、本次無法覆蓋的項目（已知，不需尋找）</a></li></ol></nav>
+<main>
+<div class="tw"><table><thead><tr><th style="text-align:left">欄位</th><th style="text-align:left">內容</th></tr></thead><tbody><tr><td style="text-align:left"><strong>目標</strong></td><td style="text-align:left">確認官網面對各種真實客戶情境時，能否順利完成客戶的目的，並確認後台作業與金物流狀態一致</td></tr><tr><td style="text-align:left"><strong>環境</strong></td><td style="text-align:left">正式環境（真實信用卡）＋ 綠界廠商後台</td></tr><tr><td style="text-align:left"><strong>處理範圍</strong></td><td style="text-align:left"><strong>買家產生的 100 筆訂單。賣家側不另行建立訂單</strong></td></tr><tr><td style="text-align:left"><strong>檢查依據</strong></td><td style="text-align:left"><a href="正式環境100筆金物流測項清單.md">正式環境100筆金物流測項清單.md</a> 的 <strong>F／G／H／I／J／K／L</strong> 各組</td></tr><tr><td style="text-align:left"><strong>作業依據</strong></td><td style="text-align:left"><a href="../06_ops-handbook/edge_case_handbook.html">客服 × 營運 邊角案例手冊</a>（27 個情境的處理方式）</td></tr><tr><td style="text-align:left"><strong>建立</strong></td><td style="text-align:left">2026-08-18｜Alice Liao</td></tr></tbody></table></div>
+<hr>
+<h2 id="給所有測試人員的說明">給所有測試人員的說明</h2>
+<p><strong>① 請以實際營運作業的方式處理訂單。</strong> 依照未來上線後的真實作業流程執行，不需為了測試而改變操作習慣。</p>
+<p><strong>② 遇到無法繼續的情況，請記錄下來，不需設法排除。</strong> 「無法完成」本身就是本次要蒐集的資料。</p>
+<p><strong>③ 以下五種情況需立即通報，其餘一律僅填寫回報表、不需通知任何人</strong></p>
+<ul><li>🔴 金額錯誤，或同一筆訂單重複扣款</li><li>🔴 同一張訂單重複退款</li><li>🔴 看見其他人的訂單或個人資料</li><li>🔴 購買數量超過實際庫存</li><li>🔴 網站整體無法運作，測試無法繼續</li></ul>
+<p>發生上述任一情況：於群組通知 PM，該筆訂單暫停操作，並照常填寫回報表。</p>
+<p><strong>④ 出現英文內容一律填入回報表。</strong> 系統應全中文顯示；若出現英文語句、英文錯誤訊息或無法辨識的英數代碼，請照抄填入。</p>
+<hr>
+<h2 id="一-分工與負責事項">一、分工與負責事項</h2>
+<div class="tw"><table><thead><tr><th style="text-align:left">代號</th><th style="text-align:left">職能</th><th style="text-align:left">負責事項</th><th style="text-align:left">對應測項組</th></tr></thead><tbody><tr><td style="text-align:left"><strong>W1／W2</strong></td><td style="text-align:left">倉儲</td><td style="text-align:left">建立物流單、列印托運單、宅配填寫客代材積與物流單號、執行出貨、實際包裝寄件、前往超商取貨</td><td style="text-align:left">F、G、H</td></tr><tr><td style="text-align:left"><strong>O1／O2</strong></td><td style="text-align:left">營運</td><td style="text-align:left">訂單狀態管理、取消訂單、退款作業</td><td style="text-align:left">I、J</td></tr><tr><td style="text-align:left"><strong>F1</strong></td><td style="text-align:left">財會</td><td style="text-align:left">綠界廠商後台交叉驗證，確認官網顯示狀態與綠界實際紀錄一致</td><td style="text-align:left">K、L</td></tr></tbody></table></div>
+<blockquote class="note"><p><strong>併發衝突（409）需兩人同時操作同一張訂單方可驗證</strong>，由 O1 與 O2 配合執行（測項 I-04）。</p></blockquote>
+<hr>
+<h2 id="二-前置作業">二、前置作業</h2>
+<h3 id="2-1-時間基準量測-由-O1-於全體開始前完成">2-1 時間基準量測（由 O1 於全體開始前完成）</h3>
+<p>建立一張訂單後關閉付款視窗，靜置並記錄下列時間：</p>
+<div class="tw"><table><thead><tr><th style="text-align:left">量測項目</th><th style="text-align:left">對照規格</th></tr></thead><tbody><tr><td style="text-align:left">訂單於第幾分鐘轉為「付款失敗，訂單不成立」</td><td style="text-align:left">門檻為 40 分鐘（JUSTPLAY-192）</td></tr><tr><td style="text-align:left"><strong>庫存於第幾分鐘回補</strong></td><td style="text-align:left">排程每 10 分鐘執行一次，預期落於 <strong>40～50 分鐘</strong></td></tr><tr><td style="text-align:left">買家閒置第幾分鐘後自動登出</td><td style="text-align:left">規格為 30 分鐘</td></tr><tr><td style="text-align:left">賣家閒置第幾分鐘後自動登出</td><td style="text-align:left">規格為 30 分鐘</td></tr><tr><td style="text-align:left">賣家帳號登入後連續操作幾小時，自動登出</td><td style="text-align:left">規格是  8小時</td></tr></tbody></table></div>
+<blockquote class="warn"><p>上述數值為判讀買家 C2、C3 回報內容的基準，須於測試開始前取得。 綠界付款頁失效時間<strong>不需量測</strong>，一律以 <strong>15 分鐘</strong> 為準（2026-08-18 裁決之工作假設）。</p>
+<p><strong>賣家（後台）session 規格依據</strong>：<a href="../01_spec/v1/decisions/decision-001-backoffice-auth.md">decision-001 後台登入機制</a>——「閒置 30 分鐘自動登出；<strong>絕對逾時 8 小時強制重登</strong>」。 ⚠️ <strong>8 小時絕對逾時對本次測試有實質影響</strong>：賣家側若連續作業超過 8 小時會被強制登出，長時間作業請預期中途需重新登入，並確認登出時<strong>未儲存的內容不會遺失</strong>（例如宅配單號填一半）。 ⚠️ 依 decision-001，登入相關錯誤提示<strong>一律中文、不可出現英文原始錯誤碼</strong>（QA 必掃項）——被登出時看到英文訊息請回報。</p></blockquote>
+<h3 id="2-2-綠界廠商後台帳號">2-2 綠界廠商後台帳號</h3>
+<p>財會需具備可登入綠界廠商後台的帳號，且可使用「交易查詢」與「物流訂單查詢」兩項功能。未取得帳號則測項 L 組無法執行。</p>
+<h3 id="2-3-綠界帳戶餘額-開始前須實際查詢並回報">2-3 綠界帳戶餘額（🔴 開始前須實際查詢並回報）</h3>
+<p>餘額不足（代碼 <code>10500049</code>）<strong>不只是某一筆失敗</strong>：它會<strong>同時阻擋建立物流單與退款</strong>，整批測試自該時點起全面停擺，已執行的數十筆訂單將停在中途且無法補救。</p>
+<p>因此<strong>不採「應足夠」之判斷</strong>。請財會於測試開始前登入綠界廠商後台，實際查看當前餘額，並於群組回報：</p>
+<blockquote class="note"><p>「綠界帳戶餘額 NT$＿＿＿＿＿，已確認足夠完成 100 筆（含 22 筆退款、9 筆真實取貨之物流費用）。」</p></blockquote>
+<p><strong>群組未出現此回報前，全體不開始測試。</strong></p>
+<h3 id="2-4-三聯式發票的統一編號與抬頭">2-4 三聯式發票的統一編號與抬頭</h3>
+<p>買家側有 25 列需選「三聯式發票（公司）」，需填統一編號與發票抬頭，<strong>25 列必須完全相同</strong>（事後方能勾稽）。</p>
+<p>請財會於開始前提供一組，交由買家側填入《100筆訂單_逐筆執行腳本》§1-2 對照表下方欄位。未提供則該 25 列無法執行。</p>
+<hr>
+<h2 id="三-訂單終態分流-最優先事項">三、訂單終態分流（最優先事項）</h2>
+<blockquote class="danger"><p><strong>本節為本次唯一發生錯誤後無法補救的環節。</strong> 賣家側測項需使用「停留於特定狀態的訂單」，而訂單由買家側產生，一經處理即無法回復。</p>
+<p>🔴 <strong>最常見的失誤：倉儲將所有訂單一併建立物流單 → 無訂單停留於「待出貨」→ 營運的取消與退款測項（20 項）全部無法執行，且無法補救。</strong></p></blockquote>
+<h3 id="3-1-先分流-再動手">3-1 先分流，再動手</h3>
+<p>買家 100 次結帳中，會有一部分不成立（前台擋單、庫存不足、付款失敗、關閉付款視窗）。<strong>成立且付款成功的訂單，依下表分流後才開始處理</strong>：</p>
+<p><strong>買家腳本已在每一列標好終態</strong>，你們照著接手即可。實際筆數如下（與《100筆訂單_逐筆執行腳本》§四完全一致）：</p>
+<div class="tw"><table><thead><tr><th style="text-align:left">訂單最後停在</th><th style="text-align:left">筆數</th><th style="text-align:left">誰推進</th><th style="text-align:left">用途</th></tr></thead><tbody><tr><td style="text-align:left"><strong>保留退款</strong>（停在「待出貨」，<strong>不要建物流單</strong>）</td><td style="text-align:left"><strong>22</strong></td><td style="text-align:left">營運</td><td style="text-align:left">I 組退款測項。<strong>從中挑 12 筆實際執行退款</strong>，其餘轉正常出貨</td></tr><tr><td style="text-align:left">超商出貨</td><td style="text-align:left">24</td><td style="text-align:left">倉儲</td><td style="text-align:left">F-01／F-02 建單、列印托運單</td></tr><tr><td style="text-align:left"><strong>超商出貨 ★真實取貨</strong></td><td style="text-align:left"><strong>9</strong></td><td style="text-align:left">倉儲＋買家</td><td style="text-align:left">F-04／F-05，要真的把貨領回來、走到訂單結案</td></tr><tr><td style="text-align:left">宅配出貨</td><td style="text-align:left">22</td><td style="text-align:left">倉儲</td><td style="text-align:left">G 全組</td></tr><tr><td style="text-align:left">逾期未取退件（寄出後放置 7 天不取）</td><td style="text-align:left">2</td><td style="text-align:left">倉儲＋放置</td><td style="text-align:left">F-06（1 筆 7-11、1 筆全家）</td></tr><tr><td style="text-align:left">不成立（付款失敗／關視窗／逾時）</td><td style="text-align:left">15</td><td style="text-align:left">系統自動</td><td style="text-align:left">財會核對綠界端應無成功授權</td></tr><tr><td style="text-align:left">擋單／未結帳</td><td style="text-align:left">3</td><td style="text-align:left">—</td><td style="text-align:left">不會產生訂單</td></tr><tr><td style="text-align:left">搶最後一件（結果不定）</td><td style="text-align:left">3</td><td style="text-align:left">—</td><td style="text-align:left">只會有 1 筆成立</td></tr><tr><td style="text-align:left"><strong>合計</strong></td><td style="text-align:left"><strong>100</strong></td><td style="text-align:left"></td><td style="text-align:left"></td></tr></tbody></table></div>
+<p><strong>結案後退貨退款 6 筆</strong>：從上表「★真實取貨 9 筆」與「宅配出貨 21 筆」已走到結案的訂單中，由營運挑 6 筆執行（I-02／I-03）。</p>
+<p><strong>不另佔訂單的測項</strong>（在既有訂單上重複操作即可）：</p>
+<ul><li><strong>I-05（422 此狀態無法退款）</strong>→ 使用「不成立」的訂單驗證</li><li><strong>I-07（已退款重複觸發）</strong>→ 於已完成退款的訂單再次觸發退款</li></ul>
+<h3 id="3-2-執行順序">3-2 執行順序</h3>
+<ol><li><strong>營運先把 22 筆標示「保留退款」的訂單標記起來</strong>（在後台備註寫「保留：退款測試」），倉儲<strong>不要碰這 22 筆</strong>。買家腳本每列都標了終態，可直接對照</li><li>倉儲再處理其餘訂單</li><li>走完整流程的訂單（超商真實取貨、宅配已送達結案）中，挑 6 筆交營運做「結案後退貨退款」</li><li>逾期未取那 2 筆，寄出後就不要去取，放到期</li></ol>
+<blockquote class="note"><p><strong>退款不可回復，每張訂單只能退一次。</strong> I 組各測項務必使用不同訂單。</p></blockquote>
+<hr>
+<h2 id="四-作業要點">四、作業要點</h2>
+<h3 id="倉儲-W1-W2">倉儲（W1／W2）</h3>
+<ul><li>超商取貨訂單於後台按 [建立物流單]，成功後會出現 [列印托運單]</li><li>宅配訂單需先填寫客代材積與物流單號並儲存，儲存成功後 [出貨] 才可點選；出貨後兩欄鎖定</li><li>宅配按 [已送達] 後會自動連動為「已取貨，訂單結案」，不需再執行其他操作</li><li>實際包裝寄件並完成超商取貨，完整走完貨態流程</li><li><strong>發票</strong>：依現行作業（莫比克開立、印出）隨包裹寄出。<strong>包裝與寄件方式不在本次規範範圍</strong>，測試只驗買家收到的結果——買家會在拆包裹時檢查「有沒有發票、類型對不對、統編抬頭印得對不對」</li><li>建立物流單失敗時，訂單應維持「待出貨」，並顯示錯誤代碼與中文說明；請完整截圖（此情境不可控，遇到才記錄）</li></ul>
+<h3 id="營運-O1-O2">營運（O1／O2）</h3>
+<ul><li>🔴 <strong>退款一律在官網後台執行，不可到綠界後台按退款</strong>（綠界後台雖然有退款功能，但走那條會與官網狀態脫節）</li><li>退款流程：待處理 →〔立刻退款〕→ 處理中 → 已發起信用卡退款請求</li><li>退款確認彈窗應顯示正確金額與信用卡末四碼</li><li><strong>退款不可回復，每張訂單僅能退款一次</strong>，各測項需使用不同訂單</li><li>訂單進度條的格數、時間戳、可操作按鈕，皆須與當前狀態相符</li><li>狀態用詞須為「不成立」「已退款」「訂單結案」，出現其他寫法請回報</li></ul>
+<h3 id="財會-F1">財會（F1）</h3>
+<ul><li>🔴 <strong>綠界廠商後台只查詢、不執行任何動作</strong>（尤其不可在綠界後台按退款）</li><li>逐筆核對官網與綠界廠商後台：訂單編號、金額、授權狀態、退款紀錄、物流單號</li><li>重點在於確認<strong>官網顯示的狀態於綠界端確實存在</strong>；若官網顯示成功而綠界查無紀錄，屬最高優先問題</li><li>完成買家 A3 的連續點擊測項後，須確認該筆訂單在綠界<strong>僅有 1 筆授權</strong></li><li>綠界後台的餘額、運費、對帳單、發票屬日常營運作業，不在本次驗收範圍</li></ul>
+<h3 id="買家測試期間會提出的請求-請照手冊處理並記錄">買家測試期間會提出的請求（請照手冊處理並記錄）</h3>
+<p>買家腳本中安排了幾筆「下單後才反悔」的情境，會在群組向你們提出。</p>
+<p><strong>請翻開 <a href="../06_ops-handbook/edge_case_handbook.html">邊角案例手冊</a> 照上面寫的處理方式做</strong>，並記錄你做了什麼、花多久、系統支不支援：</p>
+<div class="tw"><table><thead><tr><th style="text-align:left">買家</th><th style="text-align:left">會提出什麼</th></tr></thead><tbody><tr><td style="text-align:left"><strong>B1</strong></td><td style="text-align:left">「我要改成別的門市取」（訂單 B1-01）</td></tr><tr><td style="text-align:left"><strong>A1</strong></td><td style="text-align:left">「我要改成宅配寄」（訂單 A1-06）</td></tr><tr><td style="text-align:left"><strong>B3</strong></td><td style="text-align:left">「我收件人資料填錯了要改」（訂單 B3-03）</td></tr><tr><td style="text-align:left"><strong>B1</strong></td><td style="text-align:left">取貨後<strong>把商品實際寄回</strong>，要走退貨退款（訂單 B1-02）</td></tr></tbody></table></div>
+<blockquote class="note"><p>這幾項在系統上不一定做得到。<strong>做不到就記錄「做不到、只能怎麼繞」</strong>，那正是要蒐集的資料。</p></blockquote>
+<h3 id="這次測試同時是-邊角案例手冊-的實戰驗證">⚠️ 這次測試同時是「邊角案例手冊」的實戰驗證</h3>
+<p>手冊裡的 27 個情境，多數在這 100 筆的過程中會真的發生（付款失敗、逾期未取、庫存不足、訂單編號對不上、忘記密碼、三聯式發票…）。</p>
+<p><strong>遇到手冊有寫的情境時，請照手冊做，並回頭確認三件事</strong>：</p>
+<div class="tw"><table><thead><tr><th style="text-align:left">檢查</th><th style="text-align:left">若不符</th></tr></thead><tbody><tr><td style="text-align:left">手冊寫的步驟，<strong>系統上做得到嗎</strong></td><td style="text-align:left">做不到 → 回報表填「手冊寫 X，但系統做不到」</td></tr><tr><td style="text-align:left">手冊給的話術，<strong>跟畫面上實際顯示的文字一致嗎</strong></td><td style="text-align:left">不一致 → 回報，手冊要改</td></tr><tr><td style="text-align:left">遇到手冊<strong>沒有寫</strong>的狀況</td><td style="text-align:left">記下來，手冊要補這一條</td></tr></tbody></table></div>
+<blockquote class="note"><p>這類回報請在回報表的「<strong>發生頁面</strong>」欄選 <strong>★ 邊角案例手冊</strong>（下拉最後面那一項），我們會另外收整，不跟官網的問題混在一起。</p></blockquote>
+<hr>
+<h2 id="五-問題回報">五、問題回報</h2>
+<p>統一填寫 <a href="官網穩定度測試_問題回報表.xlsx">官網穩定度測試_問題回報表.xlsx</a>。</p>
+<div class="tw"><table><thead><tr><th style="text-align:left">欄位</th><th style="text-align:left">說明</th></tr></thead><tbody><tr><td style="text-align:left">訂單編號</td><td style="text-align:left">完整填寫</td></tr><tr><td style="text-align:left">測試人員代號</td><td style="text-align:left">W1、O2、F1 等</td></tr><tr><td style="text-align:left"><strong>發生時間（記錄至分）</strong></td><td style="text-align:left">後續查核依據</td></tr><tr><td style="text-align:left">發生頁面</td><td style="text-align:left">後台訂單列表／後台訂單詳情／綠界廠商後台等</td></tr><tr><td style="text-align:left">對應測項編號</td><td style="text-align:left">由下拉選單選取；找不到相符項目時選 <strong>X-99</strong></td></tr><tr><td style="text-align:left"><strong>① 我本來想做什麼</strong></td><td style="text-align:left">以自身語言描述作業目的</td></tr><tr><td style="text-align:left"><strong>② 我做了什麼</strong></td><td style="text-align:left">依序記錄操作步驟</td></tr><tr><td style="text-align:left"><strong>③ 結果如何</strong></td><td style="text-align:left">畫面實際出現的內容，文字請照抄</td></tr><tr><td style="text-align:left"><strong>④ 後續處理方式</strong></td><td style="text-align:left">已繞過／重試後成功／已放棄／詢問他人後完成／仍無法解決</td></tr><tr><td style="text-align:left"><strong>綠界後台狀態</strong></td><td style="text-align:left">由財會對照綠界後台後填寫</td></tr><tr><td style="text-align:left">截圖連結（R 欄）</td><td style="text-align:left">操作受阻時必須提供</td></tr><tr><td style="text-align:left">錄影連結（S 欄）</td><td style="text-align:left">依下方規則提供</td></tr><tr class="hot"><td style="text-align:left">是否已立即通報</td><td style="text-align:left">預設「否」；僅前述五種情況選「🔴 已立即通報」</td></tr></tbody></table></div>
+<h3 id="截圖與錄影">截圖與錄影</h3>
+<p><strong>截圖</strong>：操作受阻時必附。財會核對綠界時，<strong>官網畫面與綠界後台畫面需各截一張</strong>。</p>
+<p><strong>錄影</strong>：下列作業請全程錄影。</p>
+<div class="tw"><table><thead><tr><th style="text-align:left">作業</th><th style="text-align:left">原因</th></tr></thead><tbody><tr><td style="text-align:left"><strong>退款（O1／O2）</strong></td><td style="text-align:left">退款不可回復，每張訂單僅有一次機會留下證據</td></tr><tr><td style="text-align:left"><strong>409 併發測試（O1＋O2 同時操作）</strong></td><td style="text-align:left">兩人各自錄影，事後比對操作時間點</td></tr><tr><td style="text-align:left"><strong>建立物流單失敗時的重試過程（W1／W2）</strong></td><td style="text-align:left">無法主動重現，錯過即無紀錄</td></tr></tbody></table></div>
+<p><strong>檔名</strong>：測試人員代號_訂單編號_時間（例 <code>O1_20260818GM445210_1432</code>）。連結貼入回報表的 <strong>R 欄（截圖）</strong> 或 <strong>S 欄（錄影）</strong>。</p>
+<blockquote class="note"><p>淺黃色欄位（問題類型、嚴重度、必要性等）由 PM 與工程團隊填寫，請留空。</p></blockquote>
+<hr>
+<h2 id="六-本次無法覆蓋的項目-已知-不需尋找">六、本次無法覆蓋的項目（已知，不需尋找）</h2>
+<div class="tw"><table><thead><tr><th style="text-align:left">項目</th><th style="text-align:left">原因</th></tr></thead><tbody><tr><td style="text-align:left">優惠券</td><td style="text-align:left">目前版本無此功能</td></tr><tr><td style="text-align:left">網紅推薦碼</td><td style="text-align:left">相關活動尚未上線</td></tr><tr><td style="text-align:left">門市關轉</td><td style="text-align:left">無法主動觸發，遇到時記錄即可</td></tr><tr><td style="text-align:left">建立物流單失敗</td><td style="text-align:left">情境不可控，不安排主動模擬。作業過程中若自然遇到，核對並截圖即可</td></tr></tbody></table></div>
+<blockquote class="note"><p>代碼 <code>10500049</code>（綠界帳戶餘額不足）<strong>不需主動測試</strong>——餘額一旦不足，後續所有訂單皆無法建立物流單與退款，將導致整批測試中止。</p></blockquote>
+</main>
+<footer class="doc">JustPlay 官網穩定度測試（100 筆訂單）｜內部文件</footer>
+</div>
+</body>
+</html>
