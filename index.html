@@ -61,6 +61,14 @@ blockquote>:last-child{margin-bottom:0}
 blockquote h2{font-size:17px;border:0;margin:4px 0 8px;padding:0}
 blockquote h3{font-size:15.5px;margin:4px 0 8px}
 blockquote .tw{background:var(--card)}
+.rels{background:var(--card);border:1px solid var(--border);border-radius:10px;
+padding:16px 20px;margin-top:22px}
+.rels .t{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.08em;margin-bottom:10px}
+a.rel{display:block;padding:11px 14px;margin:7px 0;border:1px solid var(--border);
+border-radius:8px;text-decoration:none;color:var(--ink);background:#fcfcfd}
+a.rel:hover{border-color:var(--info);background:var(--info-bg)}
+a.rel .rn{display:block;font-weight:700;color:var(--info);font-size:14.5px}
+a.rel .rd{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
 footer.doc{color:var(--muted);font-size:12px;text-align:center;margin-top:26px}
 @media (max-width:640px){
  .wrap{padding:16px 12px 60px}
@@ -165,6 +173,7 @@ footer.doc{color:var(--muted);font-size:12px;text-align:center;margin-top:26px}
 <div class="tw"><table><thead><tr><th style="text-align:left">項目</th><th style="text-align:left">原因</th></tr></thead><tbody><tr><td style="text-align:left">優惠券</td><td style="text-align:left">目前版本無此功能</td></tr><tr><td style="text-align:left">網紅推薦碼</td><td style="text-align:left">相關活動尚未上線</td></tr><tr><td style="text-align:left">門市關轉</td><td style="text-align:left">無法主動觸發，遇到時記錄即可</td></tr><tr><td style="text-align:left">建立物流單失敗</td><td style="text-align:left">情境不可控，不安排主動模擬。作業過程中若自然遇到，核對並截圖即可</td></tr></tbody></table></div>
 <blockquote class="note"><p>代碼 <code>10500049</code>（綠界帳戶餘額不足）<strong>不需主動測試</strong>——餘額一旦不足，後續所有訂單皆無法建立物流單與退款，將導致整批測試中止。</p></blockquote>
 </main>
+<section class="rels"><div class="t">本次測試的其他文件</div><a class="rel" href="https://aliceliao-hihealth.github.io/100Testing-Readme/"><span class="rn">事前說明</span><span class="rd">全體測試人員必讀：目的、工作範圍、各項工作對應的文件、開始前八項確認、回報方式</span></a><a class="rel" href="https://aliceliao-hihealth.github.io/100Testing-Buyer-Scripe/"><span class="rn">買家側｜逐筆執行腳本</span><span class="rd">100 列均已載明執行日期、時段、裝置、商品與數量、取貨方式與應執行動作</span></a></section>
 <footer class="doc">JustPlay 官網穩定度測試（100 筆訂單）｜內部文件</footer>
 </div>
 </body>
